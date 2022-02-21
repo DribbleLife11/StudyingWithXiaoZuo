@@ -20,7 +20,7 @@
 /
 #include <vector>
 
-void partition() {
+int[] partition(int arr[], int l, int r) {
     
 }
 
