@@ -1,10 +1,13 @@
 #include <vector>
+
+//O(logN)
 void heapInsert(vector<int>& nums, int index) {
     while (nums[index] > nums[(index - 1) / 2]) {
         swap(nums[index], nums[(index - 1) /2]);
         index = (index - 1) / 2;
 } 
-    
+
+//O(logN)
 void heapify(vector<int>& nums, int index, int heapSize) {
     int left = index * 2 + 1;       //左孩子下标
     while (left < heapSize) {       //当有孩子时
