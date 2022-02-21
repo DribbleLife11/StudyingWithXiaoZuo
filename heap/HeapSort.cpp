@@ -11,7 +11,7 @@ void heapSort(vector<int>& nums) {
     int heapSize(nums.size());
     swap(nums[0], nums[--heapSize]);
     while (heapSize > 0) {
-        heapify(0, heapSize);
+        heapify(nums, 0, heapSize);
         swap(nums[0], nums[--heapSize]);
     }
 }
